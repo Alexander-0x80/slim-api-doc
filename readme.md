@@ -4,4 +4,4 @@ Slim-api-doc is a PHP script that generates API Documentation from [Slim](http:/
 
 ### Use 
 
-`#php slim_doc.php -i input_file.php -o output_file.md`
+`#php slim-doc.php -i input_file.php -o output_file.md`

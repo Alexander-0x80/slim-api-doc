@@ -13,8 +13,13 @@ Route | Method | Description
 ---
 Route | Method | Description
 ------|--------|------------
-`/` | GET | Root url
+`/user/:id` | DELETE | Delete user by id
 
 * `{id}`->`int` :: user id
+
+---
+Route | Method | Description
+------|--------|------------
+`/` | GET | Root url
 
 ---

@@ -36,7 +36,7 @@
             }
 
             /* Matches route path ( src ) */
-            preg_match("/^\\$[a-z]*->(get|post)\(\'(.*)\',(.*)\{/", $line, $route_data);
+            preg_match("/^\\$[a-z]*->(get|post|put|delete)\(\'(.*)\',(.*)\{/", $line, $route_data);
             if ($route_data) { 
                 array_push($doc_cache, array(
                     "route_data" => $route_data,
