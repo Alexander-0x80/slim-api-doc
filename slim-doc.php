@@ -27,12 +27,14 @@
             preg_match("/\*\s+@!\s+(.*)/", $line, $description);
             if ($description){
                 $doc_temp["description"] = $description[1];
+                continue;
             }
 
             /* Matches route parameters ( #! ) */
             preg_match("/\*\s+#!\s+param:\s+([a-z]*)->([a-z]*)\s+::\s+(.*)/", $line, $params);
             if($params){
                 array_push($doc_temp["params"], $params);
+                continue;
             }
 
             /* Matches route path ( src ) */
